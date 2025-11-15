@@ -38,7 +38,6 @@ public class LimeLightSimpleDistance extends OpMode {
         LLResult llResult = limelight.getLatestResult();
         if (llResult != null && llResult.isValid()) {
             Pose3D botPose = llResult.getBotpose();
-            telemetry.addData("Ty", llResult.getTy());
             telemetry.addData("Distance", distance);
             double targetOffsetAngle_Vertical = llResult.getTy();
             
